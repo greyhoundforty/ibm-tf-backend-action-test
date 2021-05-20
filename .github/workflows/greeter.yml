@@ -4,7 +4,7 @@ on:
   issues:
     types: [opened, edited, milestoned]
 jobs:
-  terraform_validate:
+  greet-new-user:
     runs-on: ubuntu-latest
     steps:
       - name: First interaction
