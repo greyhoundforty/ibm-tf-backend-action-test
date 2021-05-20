@@ -1,0 +1,19 @@
+name: greeter
+
+on:
+  push:
+    branches:
+    - main
+jobs:
+  terraform_validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First interaction
+        uses: actions/first-interaction@v1.1.0
+        with:
+          # Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # Comment to post on an individual's first issue
+          issue-message: "Thanks for opening an issue! This message was triggered by a Github Action"
+          # Comment to post on an individual's first pull request
+          pr-message: # optional
