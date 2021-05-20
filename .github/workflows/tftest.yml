@@ -36,7 +36,7 @@ jobs:
           # Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           # Comment to post on an individual's first issue
-          issue-message: "Testing github action for initial issue"
+          issue-message: "Thanks for opening an issue! This message was triggered by a Github Action"
           # Comment to post on an individual's first pull request
           pr-message: # optional
 
